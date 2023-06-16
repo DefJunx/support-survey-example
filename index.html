@@ -1,0 +1,73 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="bg-purple-100/60 grid place-content-center min-h-screen">
+    <main
+      class="bg-white rounded-b-lg rounded-tl-lg relative flex flex-col px-6 py-8 min-w-[40vw] gap-y-8"
+    >
+      <button class="absolute rounded-t-lg -top-6 bg-white w-10 right-0">
+        &minus;
+      </button>
+      <p
+        class="font-bold text-lg max-w-[15rem] tracking-tight leading-tight text-center mx-auto"
+      >
+        Why did you came to our support site today?
+      </p>
+      <div class="flex flex-col gap-2">
+        <label for="bugs">
+          <input
+            type="radio"
+            name="reason"
+            id="bugs"
+            class="hidden peer/bugs"
+          />
+          <div
+            class="peer-checked/bugs:shadow-lg peer-checked/bugs:text-white peer-checked/bugs:bg-indigo-500 cursor-pointer py-4 px-2 border border-slate-200 bg-slate-50 rounded-md text-sm transition"
+          >
+            I found some bugs and I want to report them
+          </div>
+        </label>
+        <label for="forum">
+          <input
+            type="radio"
+            name="reason"
+            id="forum"
+            class="hidden peer/forum"
+          />
+          <div
+            class="peer-checked/forum:shadow-lg peer-checked/forum:text-white peer-checked/forum:bg-indigo-500 cursor-pointer py-4 px-2 border border-slate-200 bg-slate-50 rounded-md text-sm transition"
+          >
+            I can't post to the forum
+          </div>
+        </label>
+        <label for="purchase">
+          <input
+            type="radio"
+            name="reason"
+            id="purchase"
+            class="hidden peer/purchase"
+            checked
+          />
+          <div
+            class="peer-checked/purchase:shadow-lg peer-checked/purchase:text-white peer-checked/purchase:bg-indigo-500 cursor-pointer py-4 px-2 border border-slate-200 bg-slate-50 rounded-md text-sm transition"
+          >
+            I can't post to the forum
+          </div>
+        </label>
+      </div>
+      <div class="text-center">
+        <button
+          type="submit"
+          class="px-4 py-2 text-indigo-600 uppercase hover:bg-neutral-300/20 transition-[background] text-sm"
+        >
+          Submit
+        </button>
+      </div>
+    </main>
+  </body>
+</html>
